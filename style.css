@@ -1,0 +1,330 @@
+*{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #16161A;
+    --secondary-color: #27272E;
+    --tertiary-color: #5092D2;
+    --background-color: #16161A;
+}
+h1 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    line-height: 90%;
+    font-size: 64px;
+    font-weight: bold;
+  }
+h2{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    line-height: auto;
+    font-size: 48px;
+    font-weight: bold;
+}
+h3{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    line-height: auto;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.medium{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 160%;
+}
+.regular{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 160%;
+}
+button{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    line-height: auto;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-image: url(./Assets/Group1.png);
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.imagenes-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    width: 70%;
+    padding-top: 75px;
+    padding-left: 75px;
+    gap: 350px;
+}
+.logo{
+    cursor: pointer;
+    padding: 16px 32px 16px 32px;
+}
+.menu{
+    display: none;
+}
+nav{
+    height: 80px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-top: 75px;
+    padding-right: 75px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+nav ul li a{
+        text-decoration: none;
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        line-height: auto;
+        font-weight: bold;
+        padding: 16px 32px 16px 32px;
+        transition: text-decoration 1s;
+        display:inline-block;
+        position:relative;
+}
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul li button{
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+    color: black;
+    padding: 16px 32px 16px 32px;
+    border: solid 3px;
+    border-color: var(--tertiary-color);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+nav ul li button:hover{
+    background-color: #FFFFFF;
+    color: black;
+    border: solid 3px;
+    border-color:var(--tertiary-color);
+}
+.hero{
+    height: 1100px;
+    width:1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 25px;
+    align-items: start;
+    padding-top: 200px;
+    padding-left: 210px;
+}
+.buttons-main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.buttons-main > button:first-child{
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+    color: black;
+    padding: 16px 32px 16px 32px;
+    border: solid 3px;
+    border-color: var(--tertiary-color);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.buttons-main > button:first-child:hover{
+    background-color: #FFFFFF;
+    color: black;
+    border: solid 3px;
+    border-color:var(--tertiary-color);
+}
+.buttons-main > button:last-child{
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 16px 32px 16px 32px;
+    border-color: #FFFFFF;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.buttons-main > button:last-child:hover{
+    background-color: #FFFFFF;
+    color: black;
+    border: solid 1px;
+    border-color: white;
+}
+#Hero{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    background-image: url(./Assets/Group2.png);
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    background-position: right;
+    flex-wrap:wrap;
+}
+.video-main{
+    display: flex;
+    width: auto;
+    height: 300px;
+    align-self: flex-end;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    cursor: pointer;
+}
+main{
+    background-color: var(--background-color);
+}
+#Personajes{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80svh;
+    width: 100%;
+}
+#Personajes h2{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+#Personajes div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    max-width: 100%;
+}
+#Personajes div .flecha{
+    display:flex;
+    cursor:pointer;
+}
+#Personajes ul li img{
+    cursor:pointer;
+    max-width: 100%;
+    width: 100%;
+    min-width: 50%;
+    height:auto;
+}
+@media (max-width: 1024px) {
+    #Personajes ul li {
+        flex: 1 1 calc(50% - 30px); /* Dos columnas en pantallas más pequeñas */
+    }
+
+    #Personajes ul li img {
+        max-width: 100%;
+        height: auto;
+    }
+    .imagenes-header{
+        gap:5px;
+    }
+    .Vector{
+        min-width: 200px;
+        max-width: 100%
+    }
+    nav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        cursor: pointer;
+        align-items: flex-end;
+        width: 50px;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 130px;
+}
+}
+
+#Personajes ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+#Personajes ul h3{
+    display:flex;
+    justify-content:center;
+    margin-top:-90px;
+}
+#Juego{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-image: url(./Assets/principal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}
+#Juego .game-image{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+    max-width:100%;
+    gap: 20px;
+}
+#Juego .game-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    gap: 20px;
+}
+#Juego img{
+    max-width: 50%;
+    min-width: 25%;
+}
+#Juego h2{
+    max-width: 400px;
+    min-width: 200px;
+}
+#Juego p{
+    max-width: 400px;
+    min-width: 200px;
+}
